@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">Octopus App</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    //-----------------Navigation Drawer viewPager Strings----------------//
+    <string name="octopus_main_title">Welcome to Octopus App</string>
+    <string name="pager_two">
+        Here is the main screen, which consist of:
+        \n\t- Navigation Drawer button.
+        \n\n\t- Save to clipboard button.
+        \n\n\t- Display screen.
+        \n\n\t- A row of control buttons and contains:
+        \n\t\t- Cipher button:\t you must select a cipher first.
+        \n\t\t- Swap button:\t swaps the text on the screen with the text in the text field.
+        \n\t\t- Clear button:\t to clear and reset the app.
+        \n\t\t- Show process button:\t for visualising the process.
+        \n\n\t- A blank place for text fields.
+        \n\n\t- Execution buttons.
+    </string>
+
+    <string name="pager_three">
+       When you click on the cipher button, a drop-down list appears containing the available ciphers.
+    </string>
+
+    <string name="pager_four">
+        When you press the navigation drawer button, the drawer appears, from which you can change the theme, change the language, read documentation and info.
+    </string>
+
+    //-----------------Text to Binary viewPager Strings----------------//
+    <string name="t_pager_one">
+        \t\tIn this step we convert ascii code to its equivalent binary number by dividing it by 2 to get the result and the remainder, now we save the remainder in list and divide the result by 2, we will keep this process until the result is zero
+    </string>
+    <string name="t_pager_two">
+        For example if ascii code was 85 which is ascii code for letter "U", we will divide 85 by 2 to get 42 as a result and the remainder is 1\n
+        Remainder list now is [1]
+    </string>
+    <string name="t_pager_three">
+        Now we divide 42 by 2 to get 21 and the remainder is 0\n
+        Remainder list now is [1,0]
+    </string>
+    <string name="t_pager_four">
+        21 divided by 2 equal 10 and the remainder is 1\n
+        Remainder list now is [1,0,1]
+    </string>
+    <string name="t_pager_five">
+        10 divided by 2 equal 5 and the remainder is 0\n
+        Remainder list now is [1,0,1,0]
+    </string>
+    <string name="t_pager_six">
+        5 divided by 2 equal 2 and the remainder is 1\n
+        Remainder list now is [1,0,1,0,1]
+    </string>
+    <string name="t_pager_seven">
+        2 divided by 2 equal 1 and the remainder is 0\n
+        Remainder list now is [1,0,1,0,1,0]
+    </string>
+    <string name="t_pager_eight">
+        1 divided by 2 equal 0 and the remainder is 1\n
+        Remainder list now is [1,0,1,0,1,0,1]\n
+        This list is the equivalent binary number to ascii code\n
+        Note: we add zero to this list as a placeholder\n
+    </string>
+
+    //---------Visualisation Dialogs String-----------//
+    <string name="rounds">
+        It represent letter in the entered text .
+    </string>
+    <string name="text">
+        It is the entered text which we want to apply specific algorithm on it .
+    </string>
+    <string name="findingIndex">
+        In this step we find the target letter\'s index by using linear search .
+    </string>
+    <string name="replacing">
+        In this step we search for the letter that has the same index but in unsorted alphabets list .
+    </string>
+    <string name="result">
+        It is the last step where the produced letter will be stored .
+    </string>
+    <string name="n_equation">
+        In this step we calculate the value of n according to the equation:\n
+        (Letter\'s index + key) % size .\n
+        % : means modulus or dividing remainder .\n
+        size : is the alphabet list\'s size, in our case here it equal 53 .
+    </string>
+    <string name="caesarReplacing">
+        In this step we search for the letter that has the index that equal to the value of n, which we get from the previous step .
+    </string>
+
+    <string name="mono_decryption_finding_index">
+        In this step we find the target letter\'s index from the unsorted alphabets list by using linear search .
+    </string>
+    <string name="mono_decryption_replacing">
+        In this step we search for the letter that has the same index but in a sorted alphabets list .
+    </string>
+    <string name="b2t_summation">
+        in this step we sum all numbers in decimal list to get the ascii code .
+    </string>
+    <string name="b2t_toChar">
+        in this step, we convert the ascii code to its equivalent char .
+    </string>
+    <string name="t2b_toAscii">
+        in this step, we convert the letter to its equivalent ascii code .
+    </string>
+    <string name="alphabet">
+        Alphabet
+    </string>
+    <string name="unsorted_alphabet">
+        Unsorted Alphabet
+    </string>
+    //---------------------------------------------------//
+
+    //----------Binary to text Dialogs string------------//
+    <string name="b2t_about">
+        in this step we convert binary number to decimal number by the rule:\nBinary digit multiplied by the product of 2 to power index .
+    </string>
+    <string name="b2t_index0">
+        For example if we want to convert "10101010" to decimal :\n
+        For index 0, it will be 1 multiplied by the product of 2 to power 0, which is equal 1\n
+        Decimal list is [1] .
+    </string>
+    <string name="b2t_index1">
+        For index 1, it will be 0 multiplied by the product of 2 to power 1, which is equal 0\n
+        Decimal list is [1,0] .
+    </string>
+    <string name="b2t_index2">
+        For index 2, it will be 1 multiplied by the product of 2 to power 2, which is equal 4\n
+        Decimal list is [1,0,4] .
+    </string>
+    <string name="b2t_index3">
+        For index 3, it will be 0 multiplied by the product of 2 to power 3, which is equal 0\n
+        Decimal list is [1,0,4,0] .
+    </string>
+    <string name="b2t_index4">
+        For index 4, it will be 1 multiplied by the product of 2 to power 4, which is equal 16\n
+        Decimal list is [1,0,4,0,16] .
+    </string>
+    <string name="b2t_index5">
+        For index 5, it will be 0 multiplied by the product of 2 to power 5, which is equal 0\n
+        Decimal list is [1,0,4,0,16,0] .
+    </string>
+    <string name="b2t_index6">
+        For index 6, it will be 1 multiplied by the product of 2 to power 6, which is equal 64\n
+        Decimal list is [1,0,4,0,16,0,64] .
+    </string>
+    <string name="b2t_index7">
+        For index 7, it will be 0 multiplied by the product of 2 to power 7, which is equal 0\n
+        Decimal list is [1,0,4,0,16,0,64,0] .\n
+        Summation of this list equal 85 .
+    </string>
+    //---------------------------------------------------//
+    //--------------------Explanation page---------------//
+
+    <string name="caesar_exp">
+        The idea of this algorithm is:\n
+        Decomposing the text into letters and then applying the idea to all the letters in a row.\n
+        Finding the alphabetical order of the letter, for example, \'A\' is 0, \'B\' is 1, etc.\n
+        - We add this number "order number" to the key value entered by the user.\n
+        Divide the result of the previous addition operation by the size of the alphabet array.\n
+        The size of the array is the number of elements inside the array.\n
+        - In our case here, we have 26 small letters and 26 capital letters, in addition to the space, so the size is equal to 53 elements.\n
+        - After performing the division process, we get the remainder of the division, which represents the order of the new letter.\n
+        - For example: the letter \'e\' has an order of 4 and the letter \'E\' has an order of 30, so if the value of the key is assumed to be 25, then:\n
+        The encoding of e is (4 + 25)%53 = 29 % 53, equals 0 and remainder 29, 29 is the order of the letter \'D\'.\n
+        The E coding is (30 + 25)%53 = 55 % 53, equals 1 and remainder 2, 2 is the order of the \'c\'.\n
+        Repeat the process with the rest of the letters.\n
+        *Note: This character \'~\' is used to replace the empty space \' \'.\n
+        You can click on each step to see its details\n
+    </string>
+    <string name="mono_exp">
+        The idea of this algorithm is:\n
+        Decomposing the text into letters and then applying the idea to the letters in a row.\n
+        Finding the alphabetical order of the letter, for example, \'A\' is 0, \'B\' is 1, etc.\n
+        - Search for the letter with the same order, but in an unsorted Alphabet.\n
+        - Then we get a new letter.\n
+        Repeat the process with the rest of the letters.\n
+        *Note: This character \'~\' is used to replace the empty space \' \'.\n
+        You can click on each step to see its details\n
+    </string>
+    <string name="caesar_exp_dec">
+        The idea of this algorithm is:\n
+        Decomposing the text into letters and then applying the idea to all the letters in a row.\n
+        Finding the alphabetical order of the letter, for example, \'A\' is 0, \'B\' is 1, etc.\n
+        - We subtract this number "order number" from the key value entered by the user.\n
+        Divide the result of the previous subtraction operation by the size of the alphabet array.\n
+        The size of the array is the number of elements inside the array.\n
+        - In our case here, we have 26 small letters and 26 capital letters, in addition to the space, so the size is equal to 53 elements.\n
+        - After performing the division process, we get the remainder of the division, which represents the order of the new letter.\n
+        - For example: the letter \'e\' has an order of 4 and the letter \'E\' has an order of 30, so if the value of the key is assumed to be 25, then:\n
+        The encoding of e is (4 - 25)%53 = 21- % 53, equals 0 and remainder 32, 32 is the order of the letter \'G\'.\n
+        The E coding is (30 - 25)%53 = 5 % 53, equals 0 and remainder 5, 5 is the order of the \'f\'.\n
+        Repeat the process with the rest of the letters.\n
+        *Note: This character \'~\' is used to replace the empty space \' \'.\n
+        You can click on each step to see its details\n
+    </string>
+    <string name="mono_exp_dec">
+        The idea of this algorithm is:\n
+        Decomposing the text into letters and then applying the idea to the letters in a row.\n
+        Finding the alphabetical order of the letter in an unsorted Alphabet, for example, \'a\' is 18, \'b\' is 48, etc.\n
+        - Search for the letter with the same order, but in an ordered array.\n
+        - Then we get a new letter.\n
+        Repeat the process with the rest of the letters.\n
+        *Note: This character \'~\' is used to replace the empty space \' \'.\n
+        You can click on each step to see its details\n
+    </string>
+    <string name="t2b_exp">
+        The idea of this algorithm is:\n
+        Each character has a special numeric code called the ASCII code.\n
+        - We find the value of the ASCII code for the character\n
+        - We convert it to a binary number.\n
+        - To convert from decimal to binary, we divide the decimal number by 2 to get a new decimal division result and the remainder of the division is either 0 or 1\n
+        - We perform the division by the decimal result and keep the remainder of the division in an array\n
+        - We repeat this process until the result of division becomes 0.\n
+        - Then the remainder array is complete and consists of only binary numbers representing the binary number equivalent to the ASCII code.\n
+        - We repeat this process with the rest of the letters.\n
+        *Note: we add 0 to the end of the array as a place holder.\n
+        You can click on each step to see its details\n
+    </string>
+    <string name="b2t_exp">
+        The idea of this algorithm is:\n
+- Every 8 binary digits represent one letter.\n
+So we have to take 8 binary numbers each time and do the following:\n
+- Converting a binary number into a decimal. This is done by multiplying the binary digit by the quotient (2 to the power of index).\n
+- index = the order of the binary digit within the binary number, starting from 0 - 7 instead of 1 - 8.\n
+- After that, we get decimal numbers that we add to get one decimal number that represents the ASCII value of a specific character.\n
+- All we have to do is convert the code to its equivalent letter.\n
+We repeat this process with the rest of the letters\n
+Note: You can click on each step to see its details\n
+    </string>
+    //---------------------------------------------------//
+    <string name="info">Info</string>
+    <string name="cipher">Cipher</string>
+    <string name="theme">Theme</string>
+    <string name="app">App</string>
+    <string name="dev">Developer</string>
+    <string name="name">Name</string>
+    <string name="version">Version</string>
+    <string name="my_name">Elzubair Elbushra</string>
+    <string name="fmo">Follow me on : </string>
+    <string name="linked_in">LinkedIn</string>
+    <string name="facebook">Facebook</string>
+    <string name="github">Github</string>
+    <string name="twitter">- twitter -</string>
+    <string name="x">X</string>
+    <string name="support">* support me here if you want : </string>
+    <string name="bmc">Buy me a coffee</string>
+    <string name="docs">Docs</string>
+    <string name="index">Index</string>
+    <string name="ascii">Ascii</string>
+    <string name="skip">Skip</string>
+    <string name="back">Back</string>
+    <string name="mono">Monoalphabetic</string>
+    <string name="caesar">Caesar</string>
+    <string name="b2t">From Binary to Text</string>
+    <string name="t2b">From Text to Binary</string>
+</resources>
